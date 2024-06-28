@@ -8,7 +8,7 @@ aceinet (2022-present)
 """
 
 import ctypes
-pyfmt = ctypes.CDLL("pyfmt.so")
+pyfmt = ctypes.CDLL("libpyfmt.so")
 
 pyfmt.default_fmt.argtypes = ctypes.c_char_p,
 pyfmt.default_fmt.restype = ctypes.POINTER(ctypes.c_char)
