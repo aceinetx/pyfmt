@@ -11,3 +11,8 @@ lightweight python string formatting library
 >>> pyfmt.printf("Hello, %s", "World!")
 Hello, world!
 ```
+## how to compile
+```
+g++ rebuild.cpp -o rebuild
+./rebuild
+```
