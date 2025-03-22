@@ -1,1 +1,3 @@
 rebuild
+*.so
+*.o
