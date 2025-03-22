@@ -14,5 +14,5 @@ Hello, world!
 ## how to compile
 ```
 g++ rebuild.cpp -o rebuild
-./rebuild
+./rebuild build
 ```
