@@ -31,7 +31,7 @@ def default_fmt(text: str, *fmt) -> str:
         elif arg_type == float:
             c_fmt_args.append(ctypes.c_double(arg))
         else:
-            raise TypeError(f"cannot convert {arg_type} to a C type")
+            c_fmt_args.append(ctypes.c_long(id(arg)))
 
     arg_text   = ctypes.c_char_p(text.encode())
     ret        = pyfmt.default_fmt(arg_text, *c_fmt_args)
